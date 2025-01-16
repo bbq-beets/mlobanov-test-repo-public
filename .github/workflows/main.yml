@@ -10,3 +10,5 @@ jobs:
     steps:
       - run: |
          printenv | sort
+      - run: |
+          ls -la /home/runner
