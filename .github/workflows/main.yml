@@ -1,0 +1,12 @@
+name: Linux
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    # runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - run: |
+         printenv | sort
